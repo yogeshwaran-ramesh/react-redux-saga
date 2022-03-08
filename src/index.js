@@ -10,7 +10,7 @@ import reportWebVitals from "./reportWebVitals";
 import imagesReducer from "./reducers/images";
 import sagas from "./sagas";
 
-const rootReducer = combineReducers({ imagesReducer });
+const rootReducer = combineReducers({ counter });
 const sagaMiddleware = createSagaMiddleware();
 const store = createStore(rootReducer, applyMiddleware(sagaMiddleware));
 sagaMiddleware.run(sagas);
