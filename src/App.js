@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
-import { fetchImages } from "./actions/images";
+import { fetchImages } from "./store/actions/images";
 
 function App() {
   const dispatch = useDispatch();
